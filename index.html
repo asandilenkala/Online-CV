@@ -4,30 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My CV</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        /* Internal CSS for styling the CV */
+        /* Internal CSS for additional styling */
         body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
             background-color: #f4f4f4;
             color: #333;
         }
         .container {
-            max-width: 800px;
-            margin: auto;
             background-color: white;
             padding: 20px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        header {
-            text-align: center;
-            background-color: #4CAF50;
-            color: white;
-            padding: 20px 0;
-        }
-        header h1 {
-            margin: 0;
+            margin-top: 20px;
         }
         .profile-image {
             display: block;
@@ -36,54 +25,40 @@
             width: 150px;
             height: 150px;
         }
-        section {
-            margin: 20px 0;
-        }
         section h2 {
             background-color: #4CAF50;
             color: white;
             padding: 10px;
-            margin: 0 -20px;
             text-align: center;
-        }
-        .contact-info, .education, .experience, .skills {
-            padding: 20px;
-        }
-        .contact-info ul, .education ul, .experience ul, .skills ul {
-            list-style: none;
-            padding: 0;
-        }
-        .contact-info li, .education li, .experience li, .skills li {
-            margin-bottom: 10px;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <!-- Header section -->
-        <header>
+        <header class="text-center mb-4">
             <h1>Asandile Nkala</h1>
-            <p>Software Developer</p>
+            <p class="lead">Software Developer</p>
         </header>
         
         <!-- Profile Image -->
-        <img src="Asandile Image.jpeg" alt="Profile Image" class="profile-image">
+        <img src="Asandile Image.jpeg" alt="Profile Image" class="profile-image img-fluid">
         
         <!-- Contact Information section -->
-        <section class="contact-info">
+        <section class="contact-info mb-4">
             <h2>Contact Information</h2>
-            <ul>
-                <li>Email: asandile@example.com</li>
-                <li>Phone: +123 456 7890</li>
-                <li>LinkedIn: <a href="https://www.linkedin.com/in/asandile-nkala">linkedin.com/in/asandile-nkala</a></li>
-                <li>GitHub: <a href="https://github.com/asandilenkala">github.com/asandilenkala</a></li>
+            <ul class="list-unstyled">
+                <li><strong>Email:</strong> asandile@example.com</li>
+                <li><strong>Phone:</strong> +123 456 7890</li>
+                <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/asandile-nkala" target="_blank">linkedin.com/in/asandile-nkala</a></li>
+                <li><strong>GitHub:</strong> <a href="https://github.com/asandilenkala" target="_blank">github.com/asandilenkala</a></li>
             </ul>
         </section>
         
         <!-- Education section -->
-        <section class="education">
+        <section class="education mb-4">
             <h2>Education</h2>
-            <ul>
+            <ul class="list-unstyled">
                 <li>
                     <strong>University of Cape Town</strong> - BSc in Computer Science
                     <br>2019 - 2023
@@ -96,9 +71,9 @@
         </section>
         
         <!-- Experience section -->
-        <section class="experience">
+        <section class="experience mb-4">
             <h2>Experience</h2>
-            <ul>
+            <ul class="list-unstyled">
                 <li>
                     <strong>Freelance Software Developer</strong>
                     <br>June 2023 - Present
@@ -119,9 +94,9 @@
         </section>
         
         <!-- Skills section -->
-        <section class="skills">
+        <section class="skills mb-4">
             <h2>Skills</h2>
-            <ul>
+            <ul class="list-unstyled">
                 <li>Programming Languages: Python, JavaScript, Java</li>
                 <li>Web Development: HTML, CSS, Django, React</li>
                 <li>Database Management: MySQL, PostgreSQL</li>
@@ -129,5 +104,10 @@
             </ul>
         </section>
     </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
